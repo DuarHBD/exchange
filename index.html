@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <img src="img/money.png" alt="" class="money-img">
-    <h1>โปรเเกรมเเปลงสกุลเงิน</h1>
+    <div class="warp"></div>
+    <div class="header">
+         <h1>เเลกเปลี่ยนสกุลเงิน</h1>
+        
+        
+       
+    </div>
+    <div class="nav"></div>
+   
     <div class="container">
+        <img src="img/money.png" alt="" class="money-img">
+        
         <div class="currency">
             <select name="" id="currency-one">
                 <option value="AED">AED</option>
@@ -65,10 +74,10 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input type="number" id="amount-one">
+            <input type="number" id="amount-one" value="1">
         </div>
         <div class="swap-container">
-            <button class="btn">สลับสุกลเงิน</button>
+            <button class="btn" id="btn">สลับสุกลเงิน</button>
             <div class="rate" id="rate">อัตราการเเลกเปลี่ยน</div>
             
         </div>
@@ -127,8 +136,14 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input type="number" id="amount-two">
+            <input type="number" id="amount-two" value="1">
         </div>
+    </div>
+    <div class="aside"> </div>
+    <div class="footer">
+        <h1>อัปเดทล่าสุด</h1>
+        <p id="date">NAN</p>
+        
     </div>
 
     <script src="script.js"></script>
